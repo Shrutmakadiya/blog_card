@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1488cc;
+  background: -webkit-linear-gradient(to right, #2b32b296, #1489ccad);
+  background: linear-gradient(to right, #2b32b2c0, #1488cc);
+}
+
+.blogPost{
+  background: #fff;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.container{
+  padding: 6rem 4rem 5rem 4rem;
+}
+
+.imgPost{
+  height: 130px;
+  width: 130px;
+  background:linear-gradient(90deg, #ff9966, #ff5e62);
+  z-index: 10;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: absolute;
+  left: -10%;
+  top: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgPost img{
+  height: 9.5rem;
+  width: 9.5rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+h3{
+  margin: 0 0 0.5rem 0;
+  color: #999;
+}
+
+h1{
+  margin: 0 0 1rem 0;
+  font: 2.5rem;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+p{
+  margin: 0 0 4.5rem 0;
+  font-size: 1.5rem;
+  color: #333;
+  line-height:1.45
+}
+
+.btnPrimary{
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 1.5rem 2rem;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+.btnPrimary:hover{
+  box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+}
+
+@media only screen and (max-width: 650px) {
+  
+  .blogPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: 0 8px;
+  }
+
+  .imgPost{
+    left: unset;
+    top: -20%;
+  }
+}
+
+@media only screen and (max-width: 324px) {
+  .imgPost{
+    left: unset;
+    top: -15%;
+  }
+}
